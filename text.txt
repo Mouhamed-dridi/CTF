@@ -1,0 +1,6 @@
+Our team has hacked the mail of Evil Corp's IT team. 
+However, their staff is quite smart; they use hashing to send critical information.
+ This mail includes the login and password of the server that we need to hack. 
+ Your mission is to unhash the code—the hash that ended life in 2005. Show us your skills!
+
+ 

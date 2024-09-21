@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety Challenge Intro</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack items vertically */
+            height: 100vh;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .text-container {
+            color: white;
+            font-size: 1.2em; /* Smaller font size */
+            text-align: center; /* Center the text */
+            white-space: pre-wrap; /* Preserve whitespace for line breaks */
+            position: relative;
+            width: 70%; /* Constrain width for better readability */
+            margin-top: 20px; /* Spacing between image and text */
+        }
+        /* Style for the blinking cursor */
+        .cursor {
+            display: inline-block;
+            background-color: white;
+            width: 6px; /* Smaller cursor width */
+            height: 1em;
+            margin-left: 2px;
+            animation: blink 0.7s step-start infinite;
+            vertical-align: middle;
+        }
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+        .logo {
+            margin-bottom: 20px; /* Space between image and text */
+        }
+        .download-link {
+            margin-top: 20px; /* Space between text and link */
+            color: green; /* Green color for the link */
+            text-decoration: none; /* Remove underline from link */
+            font-size: 1.2em; /* Increase font size for visibility */
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <audio id="bg-audio" src="music.mp3" autoplay></audio>
+    <!-- Image element for the logo -->
+    <img src="fs.gif" alt="Fsociety Logo" class="logo">
+
+    <!-- Text container for the animated text -->
+    <div class="text-container" id="text-container">
+        <span id="text"></span>
+        <span class="cursor" id="cursor"></span>
+    </div>
+
+    <!-- Download link -->
+    <a href="text.txt" class="download-link" id="download-link" download>Click here to download the challenge</a>
+
+    <script>
+        // Introductory message with a fsociety quote
+        const text = `“What If Changing The World Was Just About
+Being Here, By Showing Up No Matter How Many Times
+We Get Told We Don’t Belong.”
+
+Welcome to the challenge.
+Prepare to become part of our community.
+If you complete our 7 challenges,
+you will be one of us.`;
+
+        // Get elements for text, cursor, and download link
+        const textElement = document.getElementById('text');
+        const cursorElement = document.getElementById('cursor');
+        const downloadLink = document.getElementById('download-link');
+        
+        // Initialize index for letters
+        let letterIndex = 0;
+        
+        // Function to generate random typing delay for a realistic effect
+        function getRandomDelay() {
+            return Math.floor(Math.random() * (200 - 50) + 50); // Random delay between 50ms and 200ms
+        }
+        
+        // Function to display letters one by one
+        function typeNextLetter() {
+            // Check if there are more letters to display
+            if (letterIndex < text.length) {
+                // Add the next letter to the text element
+                textElement.innerHTML += text[letterIndex];
+                letterIndex++;
+                
+                // Call the function again after a random delay for realism
+                setTimeout(typeNextLetter, getRandomDelay());
+            } else {
+                // Hide the cursor after the typing animation is complete
+                cursorElement.style.display = 'none';
+                // Show the download link
+                downloadLink.style.display = 'block';
+            }
+        }
+        
+        // Start the typing animation
+        typeNextLetter();
+    </script>
+</body>
+</html>
