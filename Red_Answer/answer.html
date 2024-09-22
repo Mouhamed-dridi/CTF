@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Challenge</title>
+    <style>
+        body {
+            background-color: #1b1b1a; /* Dark background */
+            color: #b1322f; /* Text color */
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+        }
+        img {
+            max-width: 80%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Space below the image */
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #b1322f; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #a12a2a; /* Darker shade on hover */
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            white-space: pre-wrap; /* Preserve whitespace for typing effect */
+        }
+        .bad {
+            color: red; /* Bad answer in red */
+        }
+        .good {
+            color: green; /* Good answer in green */
+        }
+    </style>
+</head>
+<body>
+
+    <img src="pc2.jpg" alt="Hacker Challenge Image"> <!-- Image updated -->
+    <input type="text" id="nameInput" placeholder="Enter a name">
+    <button onclick="checkName()">Submit</button>
+    <div class="message" id="message"></div>
+
+    <script>
+        function typeWriter(text, className, callback) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.innerHTML = ''; // Clear previous messages
+            messageDiv.className = className; // Set class for styling
+            let index = 0;
+
+            function typeNext() {
+                if (index < text.length) {
+                    messageDiv.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeNext, 50); // Typing speed
+                } else if (callback) {
+                    callback();
+                }
+            }
+
+            typeNext();
+        }
+
+        function checkName() {
+            const inputName = document.getElementById('nameInput').value;
+            const messageDiv = document.getElementById('message');
+
+            switch (inputName.trim().toLowerCase()) {
+                case 'philip price':
+                    typeWriter("Are you crazy? How can we hack the CEO? The level of security there is extremely high!", 'bad');
+                    break;
+                case 'gideon goddard':
+                    typeWriter("Bad answer! Sending a phishing link to the head of security is a terrible idea. We need someone with weak security knowledge to pull this off!", 'bad');
+                    break;
+                case 'chris conroy':
+                    typeWriter("🏁 Good job! You've earned your first flag! But remember, all of this is just for kids. Be ready for the hard challenges ahead!", 'good');
+                    break;
+                default:
+                    typeWriter("Bad answer! Try again.", 'bad');
+            }
+        }
+    </script>
+
+</body>
+</html>

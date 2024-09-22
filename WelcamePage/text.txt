@@ -1,0 +1,50 @@
+          .
+    888 `"                               `"'              .o8
+   o888oo   .oooo.o  .ooooo.   .ooooo.  oooo   .ooooo.  .o888oo oooo    ooo
+    888    d88(  "8 d88' `88b d88' `"Y8 `888  d88' `88b   888    `88.  .8'
+    888    `"Y88b.  888   888 888        888  888ooo888   888     `88..8'
+    888    o.  )88b 888   888 888   .o8  888  888    .o   888 .    `888'
+   o888o   8""888P' `Y8bod8P' `Y8bod8P' o888o `Y8bod8P'   "888"      d8'
+                                                                .o...P'
+  
+
+-------------------------- /////////////// -------------------------------
+
+
+
+Congratulations, you’ve made it to the first level—this is the easy part. Our team has conducted a scan of the network and gathered intel on the servers
+
+hosting the Evil Corp website and app.
+
+
+** Not all servers are accessible. Use Nmap to identify which servers are running with open ports. This tool will help you navigate the terrain.
+
+--- >>> Your task: Infiltrate the accessible server and extract the contact information of one of their IT department employees.
+
+		''  In the world of the unseen, only the bold will prevail	''
+
+
+
+192.0.2.1
+192.0.2.2
+203.0.113.10
+203.0.113.11
+198.51.100.5
+198.51.100.6
+192.0.2.3
+203.0.113.20
+198.51.100.12
+192.0.2.4
+203.0.113.30
+198.51.100.15
+192.0.2.5
+203.0.113.40
+198.51.100.18
+192.0.2.6
+203.0.113.50
+198.51.100.21
+192.0.2.7
+203.0.113.60	
+
+
+                                                        
