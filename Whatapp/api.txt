@@ -1,0 +1,29 @@
+  __     ______  _    _   __     ______  _    _ 
+  \ \   / / __ \| |  | |  \ \   / / __ \| |  | |
+   \ \_/ / |  | | |  | |   \ \_/ / |  | | |  | |
+    \   /| |  | | |  | |    \   /| |  | | |  | |
+     | | | |__| | |__| |     | | | |__| | |__| |
+     |_|  \____/ \____/      |_|  \____/ \____/ 
+                                                   
+    🚨 Challenge Hint: WhatsApp APIs 🚨
+
+These are the APIs you can use in Python to create a script 
+to send WhatsApp messages to the IT staff:
+
+1. **Twilio**
+2. **WhatsApp Business API**
+3. **MessageBird**
+4. **Gupshup**
+5. **WATI (WhatsApp Team Inbox)**
+6. **ChatAPI**
+
++1 (555) 987-6543
++44 20 7946 0958
++49 30 12345678
++61 2 1234 5678
++1 (416) 555-0199
+
+We have everything we need and are still waiting to show these people to stay out of the office. 
+Now, check if you already have the coding and hacking skills or not!
+
+Stay stealthy, and good luck!

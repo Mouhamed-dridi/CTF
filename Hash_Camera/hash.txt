@@ -1,0 +1,20 @@
+ _       _____  _______ _     _ _______ _______ _____ _______ _     _
+ |      |     | |       |____/  |______ |  |  |   |      |    |_____|
+ |_____ |_____| |_____  |    \_ ______| |  |  | __|__    |    |     |
+     .--.                  .--.                  .--.            
+    /.-. '----------.     /.-. '----------.     /.-. '----------.
+    \'-' .---'-''-'-'     \'-' .--'--''-'-'     \'-' .--'--'-''-'
+     '--'                  '--'                  '--'  
+
+      
+      
+ 
+Here are the secrets you need:
+
+    Login : 17c4520f6cfd1ab53d8745e84681eb49
+    Password: 73f4bc7d54bdc376280936b7646684df
+
+
+Hint: If you're already a hacker, you can create a Python script that uses these hashes. 
+But if you're a noob, well, you might want to use some kali hash tools instead! 
+Happy hacking!
