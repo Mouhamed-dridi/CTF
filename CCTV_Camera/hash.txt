@@ -11,8 +11,10 @@
  
 Here are the secrets you need:
 
+    server : 13.94.214.254
     Login : 17c4520f6cfd1ab53d8745e84681eb49
-    Password: 73f4bc7d54bdc376280936b7646684df
+    Password: 7j@G5$kL8#qW1%yX3mR
+
 
 
 Hint: If you're already a hacker, you can create a Python script that uses these hashes. 

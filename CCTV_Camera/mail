@@ -1,0 +1,16 @@
+Congratulations on making it this far. Your next mission is to hack into the CCTV server that contains valuable backup video recordings. This intel will help us determine the best time to launch a DDoS attack on Evil Corp’s servers.
+
+Your Tasks:
+Obtain SSH Access:
+
+Locate the file that contains SSH access credentials to the CCTV server. Be aware that some data may be encrypted (look out for hashes like MD5 or Base64).
+Find the Hidden Backup Folder:
+
+Once you’re inside the server, search for the CCTV backup folder. Keep in mind that the IT staff may have hidden it, so thorough searching is key.
+Extract the Schedule:
+
+Inside the backup folder, you should find an Excel sheet that outlines the scheduling for the CCTV cameras. This is our target.
+Send us the file via email to claim your flag and advance to the next level.
+Stay vigilant, and remember: the success of the operation depends on your stealth.
+
+Good luck,

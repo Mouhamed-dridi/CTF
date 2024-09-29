@@ -12,39 +12,40 @@
 
 
 
-Congratulations, you’ve made it to the first level—this is the easy part. Our team has conducted a scan of the network and gathered intel on the servers
+Welcome to the first level of our CTF challenge! This part is straightforward, so let’s see what you can do.
 
-hosting the Evil Corp website and app.
+Here’s a random list of our targets. Use ping to check if these servers are up or down, and employ nslookup to gather details about each server—their location and any other relevant info.
 
+Not all servers are accessible, so check which one is hosting the Evil Corp web server. That’s your primary target. Get ready to access that server!
 
-** Not all servers are accessible. Use Nmap to identify which servers are running with open ports. This tool will help you navigate the terrain.
+Congratulations on making it to this level—it's meant to be simple! Our team has already conducted scans and gathered intel on the servers linked to the Evil Corp website and app.
 
---- >>> Your task: Infiltrate the accessible server and extract the contact information of one of their IT department employees.
-
-		''  In the world of the unseen, only the bold will prevail	''
-
+----->>>> "One of these servers hosts the Evil Corp website. Your mission is to find the right IP and access the Evil Corp site. When you find the correct IP of the web server, reply to us at this address, and we’ll send you your next challenge."
 
 
-192.0.2.1
-192.0.2.2
-203.0.113.10
-203.0.113.11
-198.51.100.5
-198.51.100.6
-40.71.253.37
-203.0.113.20
-198.51.100.12
-192.0.2.4
-203.0.113.30
-198.51.100.15
-192.0.2.5
-203.0.113.40
-198.51.100.18
-192.0.2.6
-203.0.113.50
-198.51.100.21
-192.0.2.7
-203.0.113.60	
+
+
+13.33.187.59
+64.71.140.34
+205.186.161.216
+108.156.46.112
+64.71.140.34
+205.186.161.216
+13.94.214.254
+64.71.140.34
+18.239.36.44
+18.239.36.44
+38.100.128.10
+64.71.140.34
+13.33.187.59
+64.71.140.34
+13.33.187.59
+38.100.128.10
+205.186.161.216
+108.156.46.112
+108.156.46.112
+18.239.36.44
+64.71.140.34
 
 
                                                         
